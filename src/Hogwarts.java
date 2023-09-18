@@ -30,14 +30,13 @@ public abstract class Hogwarts {
         return "Сила магии - " + getMagicPower() + " , дистанция трансгрессии - " + getDistanceOfTransgression();
     }
 
-    public int sum(Hogwarts hogwarts) {
-        int sum = getMagicPower() + getDistanceOfTransgression();
-        ;
-        return sum;
+    public int getSum() {
+        return getMagicPower() + getDistanceOfTransgression();
+
 
     }
 
-    public static void compareStudents(Griffindor HarryPotter, Slytherin GregoryGoyle) {
+    public  void compareStudents(Griffindor HarryPotter, Slytherin GregoryGoyle) {
         int sum1 = HarryPotter.sum(HarryPotter);
         int sum2 = GregoryGoyle.sum(GregoryGoyle);
         if (sum1 > sum2) {

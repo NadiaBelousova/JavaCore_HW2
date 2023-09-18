@@ -52,7 +52,7 @@ public class Ravenclaw extends Hogwarts {
 
     }
 
-    public static void compare(Ravenclaw ZhouChang, Ravenclaw PadmaPatil) {
+    public void compare(Ravenclaw ZhouChang, Ravenclaw PadmaPatil) {
         int sum1 = ZhouChang.sum(ZhouChang);
         int sum2 = PadmaPatil.sum(PadmaPatil);
         if (sum1 > sum2) {

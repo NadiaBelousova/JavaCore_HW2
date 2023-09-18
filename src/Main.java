@@ -16,14 +16,15 @@ public class Main {
         Ravenclaw PadmaPatil = new Ravenclaw(40, 40, 40, 40, 40,40);
         Ravenclaw MarcusBelby = new Ravenclaw(30, 30, 30, 30, 30, 30);
 
+
         System.out.println("HarryPotter: "+HarryPotter.toString());
         System.out.println("DracoMalfoy: "+DracoMalfoy.toString());
         System.out.println("MarcusBelby: "+MarcusBelby.toString());
-        Griffindor.compare(HermioneGranger,RonWeasley);
-        Hufflepuff.compare(CedricDiggory,ZacharianSmith);
-        Ravenclaw.compare(PadmaPatil,ZhouChang);
-        Slytherin.compare(GregoryGoyle,GrahamMontague);
-        Hogwarts.compareStudents(HarryPotter,GregoryGoyle);
+        HermioneGranger.compare(HermioneGranger, RonWeasley);
+        CedricDiggory.compare(CedricDiggory,ZacharianSmith);
+        PadmaPatil.compare(PadmaPatil,ZhouChang);
+        GregoryGoyle.compare(GregoryGoyle,GrahamMontague);
+        HarryPotter.compareStudents(HarryPotter,GregoryGoyle);
 
     }
 
