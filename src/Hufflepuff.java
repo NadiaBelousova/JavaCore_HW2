@@ -43,7 +43,7 @@ public class Hufflepuff extends Hogwarts {
 
     }
 
-    public static void compare(Hufflepuff CedricDiggory, Hufflepuff ZacharianSmith) {
+    public  void compare(Hufflepuff CedricDiggory, Hufflepuff ZacharianSmith) {
         int sum1 = CedricDiggory.sum(CedricDiggory);
         int sum2 = ZacharianSmith.sum(ZacharianSmith);
         if (sum1 > sum2) {

@@ -39,12 +39,12 @@ public class Griffindor extends Hogwarts {
         return "Сила магии - " + getMagicPower() + " , дистанция трансгрессии - " + getDistanceOfTransgression() + ", Очки храбрости - " + getBravery() + ", Очки чести - " + getHonor() + ", Очки благородства - " + getNobility();
     }
 
-    private int sum(Griffindor griffindors) {
+    public int sum(Griffindor griffindors) {
         return getBravery() + getHonor() + getNobility();
 
     }
 
-    public static void compare(Griffindor HermioneGranger, Griffindor RonWeasley) {
+    public  void compare(Griffindor HermioneGranger, Griffindor RonWeasley) {
         int sum1 = HermioneGranger.sum(HermioneGranger);
         int sum2 = RonWeasley.sum(RonWeasley);
         if (sum1 > sum2) {
