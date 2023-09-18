@@ -1,9 +1,10 @@
-public class Slytherin extends Hogwarts{
-    int cunning;
-    int determination;
-    int ambition;
-    int resourcefulness;
-        int thirstForPower;
+public class Slytherin extends Hogwarts {
+    private int cunning;
+    private int determination;
+    private int ambition;
+    private int resourcefulness;
+    private int thirstForPower;
+
 
     public Slytherin(int magicPower, int distanceOfTransgression, int cunning, int determination, int ambition, int resourcefulness, int thirstForPower) {
         super(magicPower, distanceOfTransgression);
@@ -53,4 +54,27 @@ public class Slytherin extends Hogwarts{
     public void setThirstForPower(int thirstForPower) {
         this.thirstForPower = thirstForPower;
     }
+
+    public String toString() {
+        return "Сила магии - " + getMagicPower() + " , дистанция трансгрессии - " + getDistanceOfTransgression() + ", очки хитрости - " + getCunning() + ", очки решительности - " + getDetermination() + ", очки амбициозности - " + getAmbition() + ", очки находчивости - " + getResourcefulness() + ", очки жажды власти - " + getThirstForPower();
+    }
+
+    private int sum(Slytherin slytherin) {
+        return getThirstForPower() + getCunning() + getResourcefulness() + getAmbition() + getDetermination();
+
+    }
+
+    public static void compare(Slytherin GregoryGoyle, Slytherin GrahamMontague) {
+        int sum1 = GregoryGoyle.sum(GregoryGoyle);
+        int sum2 = GrahamMontague.sum(GrahamMontague);
+        if (sum1 > sum2) {
+            System.out.println("GregoryGoyle лучший слизеринец, чем  GrahamMontague");
+        } else {
+            System.out.println("GrahamMontague лучший слизеринец, чем  GregoryGoyle");
+
+        }
+    }
 }
+
+
+
