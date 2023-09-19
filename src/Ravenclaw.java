@@ -47,14 +47,14 @@ public class Ravenclaw extends Hogwarts {
     public String toString() {
         return "Сила магии - " + getMagicPower() + " , дистанция трансгрессии - " + getDistanceOfTransgression() + ", очки интеллекта- " + getIntelligence() + ", очки мудрости - " + getWisdom() + ", очки остроумия - " + getWit() + ", очки креативности - " + getCreativity();
     }
-    private int sum(Ravenclaw ravenclaw) {
+    private int sumRavenclaw() {
         return getCreativity()+getWit()+getWisdom()+getIntelligence();
 
     }
 
-    public void compare(Ravenclaw ZhouChang, Ravenclaw PadmaPatil) {
-        int sum1 = ZhouChang.sum(ZhouChang);
-        int sum2 = PadmaPatil.sum(PadmaPatil);
+    public void compare(Ravenclaw zhouChang) {
+        int sum1 = zhouChang.sumRavenclaw();
+        int sum2 = this.sumRavenclaw();
         if (sum1 > sum2) {
             System.out.println("ZhouChang лучший когтевранец, чем  PadmaPatil");
         } else {

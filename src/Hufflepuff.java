@@ -38,14 +38,14 @@ public class Hufflepuff extends Hogwarts {
     public String toString() {
         return "Сила магии - " + getMagicPower() + " , дистанция трансгрессии - " + getDistanceOfTransgression() + ", очки трудолюбия - " + getHardWork() + ", очки верности - " + getLoyalty() + ", очки честности - " + getHonesty();
     }
-    private int sum(Hufflepuff hufflepuff) {
+    private int sumHufflepuff() {
         return getHardWork()+getHonesty()+getLoyalty();
 
     }
 
-    public  void compare(Hufflepuff CedricDiggory, Hufflepuff ZacharianSmith) {
-        int sum1 = CedricDiggory.sum(CedricDiggory);
-        int sum2 = ZacharianSmith.sum(ZacharianSmith);
+    public  void compare(Hufflepuff zacharianSmith) {
+        int sum1 = this.sumHufflepuff();
+        int sum2 = zacharianSmith.sumHufflepuff();
         if (sum1 > sum2) {
             System.out.println("CedricDiggory лучший пуффендуец, чем  ZacharianSmith");
         } else {

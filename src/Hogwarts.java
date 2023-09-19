@@ -36,9 +36,9 @@ public abstract class Hogwarts {
 
     }
 
-    public  void compareStudents(Griffindor HarryPotter, Slytherin GregoryGoyle) {
-        int sum1 = HarryPotter.sum(HarryPotter);
-        int sum2 = GregoryGoyle.sum(GregoryGoyle);
+    public  void compareStudents(Slytherin gregoryGoyle) {
+        int sum1 = this.getSum();
+        int sum2 = gregoryGoyle.getSum();
         if (sum1 > sum2) {
             System.out.println("HarryPotter обладает большей мощностью магии, чем  GregoryGoyle");
         } else {
