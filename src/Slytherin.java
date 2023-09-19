@@ -59,14 +59,14 @@ public class Slytherin extends Hogwarts {
         return "Сила магии - " + getMagicPower() + " , дистанция трансгрессии - " + getDistanceOfTransgression() + ", очки хитрости - " + getCunning() + ", очки решительности - " + getDetermination() + ", очки амбициозности - " + getAmbition() + ", очки находчивости - " + getResourcefulness() + ", очки жажды власти - " + getThirstForPower();
     }
 
-    public int sum(Slytherin slytherin) {
+    public int sumSlytherin() {
         return getThirstForPower() + getCunning() + getResourcefulness() + getAmbition() + getDetermination();
 
     }
 
-    public void compare(Slytherin GregoryGoyle, Slytherin GrahamMontague) {
-        int sum1 = GregoryGoyle.sum(GregoryGoyle);
-        int sum2 = GrahamMontague.sum(GrahamMontague);
+    public void compare(Slytherin grahamMontague) {
+        int sum1 = this.sumSlytherin();
+        int sum2 = grahamMontague.sumSlytherin();
         if (sum1 > sum2) {
             System.out.println("GregoryGoyle лучший слизеринец, чем  GrahamMontague");
         } else {
